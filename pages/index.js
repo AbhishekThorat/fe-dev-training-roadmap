@@ -323,16 +323,13 @@ export default function Home() {
           box-sizing: border-box;
         }
 
-        .css-q6vr8b-TimelineContentDetails {
-          white-space: pre-line;
-        }
-        .css-1nnu7kd-TimelineItemContentWrapper {
-          min-height: auto;
-        }
         .card-description {
           margin-top: 0;
         }
-        .css-1nnu7kd-TimelineItemContentWrapper {
+        .card-description p {
+          white-space: pre-line;
+        }
+        .timeline-card-content {
           min-height: auto !important;
         }
       `}</style>
