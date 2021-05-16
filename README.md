@@ -25,11 +25,11 @@ npm run dev
 
 ## Credit
 
-- Training structure is heavily inspired from following sites/content.
-  [developer-roadmap by kamranahmedse](https://github.com/kamranahmedse/developer-roadmap)
-  [Scott Granneman's awesome content](https://www.granneman.com/)
-  [devpractical's awesome content](https://devpractical.com/)
-  [Awesome assignment ideas - ](https://github.com/florinpop17/app-ideas)
+- Training structure is heavily inspired from following sites/content.<br/>
+  [developer-roadmap by kamranahmedse](https://github.com/kamranahmedse/developer-roadmap)<br/>
+  [Scott Granneman's awesome content](https://www.granneman.com/)<br/>
+  [devpractical's awesome content](https://devpractical.com/)<br/>
+  [Awesome assignment ideas - ](https://github.com/florinpop17/app-ideas)<br/>
 
 ## Contributing
 
