@@ -6,7 +6,7 @@ To start the project, will need to do
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Project Link:
+Project Link: https://fe-dev-training-roadmap.vercel.app/
 
 To Start
 
@@ -20,6 +20,8 @@ npm run dev
 - [x] Add important points to the roadmap
 - [x] Add assignments w.r.t. training progress and current topic
 - [] UX Review & Style enhancement
+- [] Use GitHub actions for deployment.
+- [] Code refactoring.
 
 ## Credit
 
