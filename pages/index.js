@@ -1,194 +1,157 @@
-import Head from 'next/head'
+import Head from "next/head";
+import { Chrono } from "react-chrono";
+
+const items = [
+  {
+    title: "May 26, 1951",
+    cardTitle: "Origins",
+    cardSubtitle:
+      "President John F. Kennedy says he will send astronauts to the moon by 1970.",
+  },
+  {
+    title: "Jan. 26, 1962",
+    cardTitle: "Ranger crashes into moon",
+    cardSubtitle: "Unmanned Ranger sent to crash into moon but misses target.",
+  },
+  {
+    title: "Nov. 6, 1966",
+    cardTitle: "5 satellites map moon",
+    cardSubtitle: "Second of five U.S. satellites sent to orbit, map moon.",
+  },
+  {
+    title: "Jan. 27, 1967",
+    cardTitle: "First soft landing",
+    cardSubtitle:
+      "Moon probe makes soft landing near crater Tycho. Photos, soil samples taken.",
+  },
+  {
+    title: "Oct. 11, 1968",
+    cardTitle: "Manned flight",
+    cardSubtitle: "First manned flight of Apollo 7 spacecraft",
+  },
+  {
+    title: "Dec. 21, 1968",
+    cardTitle: "Saturn rockets",
+    cardSubtitle:
+      "First flight to the moon carried by Saturn V rocket. Apollo 8 astronauts orbit the moon 10 times",
+  },
+  {
+    title: "March 3, 1969",
+    cardTitle: "Lunar module",
+    cardSubtitle: "First flight of lunar module",
+  },
+  {
+    title: "May 18, 1969",
+    cardTitle: "Apollo 10",
+    cardSubtitle: "Apollo 10 flies around moon",
+  },
+  {
+    title: "July 16, 1969",
+    cardTitle: "Astronauts",
+    cardSubtitle:
+      "Astronauts Neil Armstrong, Buzz Aldrin and Michael Collins fly to moon on Apollo 11",
+  },
+  {
+    title: "July 20, 1969",
+    cardTitle: "Neil Armstrong",
+    cardSubtitle: "Neil Armstrong becomes the first man to walk on the moon",
+  },
+  {
+    title: "Nov. 14, 1969",
+    cardTitle: "Second landing",
+    cardSubtitle: "Apollo 12 astronauts make second landing",
+  },
+  {
+    title: "Feb. 19, 1970",
+    cardTitle: "Failure",
+    cardSubtitle: "U.S.S.R. fails fourth attempt to launch a moon rocket",
+  },
+  {
+    title: "April 11, 1970",
+    cardTitle: "Mission 13",
+    cardSubtitle: "Apollo 13 moon mission aborted when oxygen tank explodes",
+  },
+  {
+    title: "Jan. 31, 1971",
+    cardTitle: "Mission 14",
+    cardSubtitle: "Apollo 14 lands on the moon",
+  },
+  {
+    title: "May 18, 1969",
+    cardTitle: "Mission 15",
+    cardSubtitle:
+      "Apollo 15 makes fourth landing. First use of the lunar rover vehicle",
+  },
+  {
+    title: "May 18, 1969",
+    cardTitle: "Mission 16",
+    cardSubtitle: "Apollo 16 makes fifth landing",
+  },
+  {
+    title: "May 18, 1969",
+    cardTitle: "Mission 17",
+    cardSubtitle: "Apollo 17 makes final moon landing",
+  },
+];
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>FE-dev Roadmap</title>
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1
+          className="title"
+          style={{
+            position: "sticky",
+            top: 0,
+            zIndex: 2,
+            backgroundColor: "white",
+            padding: "16px",
+            width: "100%",
+            textAlign: "center",
+            borderBottom: "1px solid lightgray",
+          }}
+        >
+          Frontend Development Training Roadmap
         </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div style={{ maxWidth: "900px", height: "80vh", margin: "auto" }}>
+          <Chrono items={items} slideShow mode="VERTICAL_ALTERNATING" />
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      <footer
+        style={{
+          textAlign: "center",
+          position: "fixed",
+          bottom: "16px",
+          left: "0",
+          right: "0",
+        }}
+      >
+        <div
+          style={{
+            textAlign: "center",
+          }}
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+          Handcrafted with <span style={{ color: "#ea4e4e" }}>&#9829;</span> by{" "}
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/abhishek-thorat-143aa2bb"
+          >
+            Abhishek
+          </a>
+        </div>
+        <div>
+          For contribution/issues/suggestions, please visit
+          <a href="https://github.com/AbhishekThorat/fe-dev-training-roadmap">
+            {" "}
+            this github repo
+          </a>
+        </div>
       </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
 
       <style jsx global>{`
         html,
@@ -205,5 +168,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
