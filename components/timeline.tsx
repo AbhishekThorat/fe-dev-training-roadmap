@@ -50,11 +50,7 @@ const Timeline = () => {
 
             <TimelineSeparator>
               <TimelineDot>
-                {
-                  data.timeLineDotContent ? (
-                    <data.timeLineDotContent />
-                  ) : <AcUnitIcon />
-                }
+                <AcUnitIcon />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
