@@ -1,6 +1,6 @@
 To start the project, will need to do
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
@@ -48,6 +48,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/AbhishekThorat"><img src="https://avatars.githubusercontent.com/u/18628649?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abhishek Thorat</b></sub></a><br /><a href="https://github.com/AbhishekThorat/fe-dev-training-roadmap/issues?q=author%3AAbhishekThorat" title="Bug reports">🐛</a> <a href="https://github.com/AbhishekThorat/fe-dev-training-roadmap/commits?author=AbhishekThorat" title="Code">💻</a> <a href="#content-AbhishekThorat" title="Content">🖋</a> <a href="#design-AbhishekThorat" title="Design">🎨</a> <a href="https://github.com/AbhishekThorat/fe-dev-training-roadmap/commits?author=AbhishekThorat" title="Documentation">📖</a> <a href="#maintenance-AbhishekThorat" title="Maintenance">🚧</a> <a href="https://github.com/AbhishekThorat/fe-dev-training-roadmap/pulls?q=is%3Apr+reviewed-by%3AAbhishekThorat" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/mehulcse"><img src="https://avatars.githubusercontent.com/u/7822793?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mehul Thakkar</b></sub></a><br /><a href="https://github.com/AbhishekThorat/fe-dev-training-roadmap/commits?author=mehulcse" title="Code">💻</a> <a href="#data-mehulcse" title="Data">🔣</a> <a href="https://github.com/AbhishekThorat/fe-dev-training-roadmap/commits?author=mehulcse" title="Documentation">📖</a> <a href="#ideas-mehulcse" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-mehulcse" title="Maintenance">🚧</a> <a href="https://github.com/AbhishekThorat/fe-dev-training-roadmap/pulls?q=is%3Apr+reviewed-by%3Amehulcse" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
