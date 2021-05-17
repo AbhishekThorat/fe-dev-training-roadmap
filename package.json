@@ -13,7 +13,6 @@
     "@material-ui/lab": "^4.0.0-alpha.58",
     "next": "^10.0.0",
     "react": "17.0.1",
-    "react-chrono": "^1.9.2",
     "react-dom": "17.0.1",
     "react-router-dom": "^5.2.0"
   },
