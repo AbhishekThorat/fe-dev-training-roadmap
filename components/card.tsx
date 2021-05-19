@@ -3,6 +3,7 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import { TrainingDataType } from '../trainingData';
 import { default as MuCard } from '@material-ui/core/Card';
+import Box from '@material-ui/core/Box';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Collapse from '@material-ui/core/Collapse';
@@ -73,23 +74,29 @@ const Card = ({ cardData }: { cardData: TrainingDataType }) => {
           }
 
           {
-            cardData.assignments?.map((assignment) => (
-              <React.Fragment key={assignment.title}>
+            cardData.referenceDetails?.map((referenceDetail) => (
+              <React.Fragment key={referenceDetail.title}>
                 <Typography>
-                  {assignment.title}
+                  {referenceDetail.title}
                 </Typography>
                 {
-                  assignment.subTitle && (
+                  referenceDetail.subTitle && (
                     <Typography variant="body1">
-                      {assignment.subTitle}
+                      {referenceDetail.subTitle}
                     </Typography>
                   )
                 }
                 {
-                  assignment.referenceUrls?.map((url, index) =>
-                    <Link key={url} target="blank" href={url} variant="body1">
-                      Reference URL {index + 1}
-                    </Link>
+                  referenceDetail.referenceUrls?.length > 0 && (
+                    <Box display="flex" flexWrap="wrap" textAlign="inherit" justifyContent="space-evenly">
+                      {
+                        referenceDetail.referenceUrls?.map((referenceUrl, index) =>
+                          <Link key={referenceUrl.url} target="_blank" color="secondary" href={referenceUrl.title} style={{ margin: 4, fontSize: 16 }}>
+                            {referenceUrl.title}
+                          </Link>
+                        )
+                      }
+                    </Box>
                   )
                 }
               </React.Fragment>

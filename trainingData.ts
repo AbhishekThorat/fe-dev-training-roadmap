@@ -1,5 +1,4 @@
 import React from "react";
-import FastfoodIcon from "@material-ui/icons/Fastfood";
 
 enum TopicLevel {
   Common,
@@ -8,17 +7,24 @@ enum TopicLevel {
   Advanced
 }
 
+type ReferenceUrls = {
+  title: string;
+  url: string;
+}
+
+type ReferenceDetail = {
+  title: string;
+  subTitle?: string;
+  referenceUrls?: ReferenceUrls[];
+}
+
 export type TrainingDataType = {
   level: TopicLevel;
   timeLineDotContent?: React.ReactNode;
   title: React.ReactNode;
   subTitle?: React.ReactNode;
   description: React.ReactNode;
-  assignments?: {
-    title: string;
-    subTitle?: string;
-    referenceUrls?: string[];
-  }[];
+  referenceDetails?: ReferenceDetail[];
 }
 
 export const TIME_LINE_OPPOSITE_CONTENT_PREFIX = "Step";
@@ -29,14 +35,26 @@ export const trainingData: TrainingDataType[] = [
     title: "Problem Solving",
     subTitle: "Let's start evolving Problem Solving skills!",
     description: "I think problem solving is one of most important skill for software engineers. I recommend to solve at least one problem per day.",
-    assignments: [{
+    referenceDetails: [{
       title: "Reference URLs",
       subTitle: "We can use following awesome platforms (Use JS to solve problems)",
       referenceUrls: [
-        "https://www.freecodecamp.org/",
-        "https://www.codility.com/",
-        "https://www.dailycodingproblem.com/",
-        "https://www.hackerrank.com/"
+        {
+          title: "Freecodecamp",
+          url: "https://www.freecodecamp.org/",
+        },
+        {
+          title: "Codility",
+          url: "https://www.codility.com/"
+        },
+        {
+          title: "Dailycodingproblem",
+          url: "https://www.dailycodingproblem.com/"
+        },
+        {
+          title: "Hackerrank",
+          url: "https://www.hackerrank.com/"
+        }
       ]
     }]
   },
@@ -45,15 +63,28 @@ export const trainingData: TrainingDataType[] = [
     title: "Basic HTML",
     subTitle: "Let's start with basic HTML",
     description: `Basic HTML, Doctype, HTML and HTML5, Id and class, Favicon, Semantic HTML, HTML Input types, HTML Attributes`,
-    assignments: [
+    referenceDetails: [
       {
         title: "Reading Materials -",
-        referenceUrls: ["https://www.w3schools.com/html/default.asp", "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics", "http://tudip.steersimple.com/projects/tudip-internal/wiki/HTML_Deep_Diving"]
+        referenceUrls: [
+          {
+            title: "w3schools",
+            url: "https://www.w3schools.com/html/default.asp"
+          },
+          {
+            title: "MDN",
+            url: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
+          }]
       },
       {
         title: "Assignment - 1",
         subTitle: "Portfolio-site",
-        referenceUrls: ["https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage"]
+        referenceUrls: [
+          {
+            title: "Assignment details",
+            url: "https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage"
+          }
+        ]
       }]
   },
   {
@@ -63,10 +94,15 @@ export const trainingData: TrainingDataType[] = [
     description: `HTML forms
     Storages and HTML Events -> Session Storage and Local Storage
     `,
-    assignments: [{
+    referenceDetails: [{
       title: "Assignment - 2",
       subTitle: "An Online Survey Form -",
-      referenceUrls: ["https://codepen.io/freeCodeCamp/full/VPaoNP"]
+      referenceUrls: [
+        {
+          title: "Assignment/Expected output",
+          url: "https://codepen.io/freeCodeCamp/full/VPaoNP"
+        }
+      ]
     }]
   },
   {
@@ -76,16 +112,26 @@ export const trainingData: TrainingDataType[] = [
     description: `SEO
     Accessibility
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: "Assignment 3",
         subTitle: "Product landing page - ",
-        referenceUrls: ["https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Product-Landing-Page.md"]
+        referenceUrls: [
+          {
+            title: "Product Landing Page",
+            url: "https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Product-Landing-Page.md"
+          }
+        ]
       },
       {
         title: "Bonus",
         subTitle: "HTML exercise - ",
-        referenceUrls: ["https://www.w3schools.com/html/exercise.asp"]
+        referenceUrls: [
+          {
+            title: "HTML Exercise Page",
+            url: "https://www.w3schools.com/html/exercise.asp"
+          }
+        ]
       }
     ]
   },
@@ -99,16 +145,26 @@ export const trainingData: TrainingDataType[] = [
     
     Understand layouts
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: "Assignment 4",
         subTitle: "Implement login page for some site -",
-        referenceUrls: ["https://app.pluralsight.com/id?"]
+        referenceUrls: [
+          {
+            title: "Pluralsight Login Page",
+            url: "https://app.pluralsight.com/id?"
+          }
+        ]
       },
       {
         title: "Assignment 5",
         subTitle: "Acme Photography - ",
-        referenceUrls: ["https://jolly-kalam-23776e.netlify.app/photographysite/#images"]
+        referenceUrls: [
+          {
+            title: "ACME Photography Site",
+            url: "https://jolly-kalam-23776e.netlify.app/photographysite/#images"
+          }
+        ]
       }
     ]
   },
@@ -120,7 +176,7 @@ export const trainingData: TrainingDataType[] = [
     Viewport, Media queries
     
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: "Assignment 6",
         subTitle: "Let's make Assignment 1 responsive.",
@@ -128,7 +184,12 @@ export const trainingData: TrainingDataType[] = [
       {
         title: "Bonus",
         subTitle: "complete this CSS exercise -",
-        referenceUrls: ["https://www.w3schools.com/css/exercise.asp"]
+        referenceUrls: [
+          {
+            title: "CSS Exercises",
+            url: "https://www.w3schools.com/css/exercise.asp"
+          }
+        ]
       }
     ]
   },
@@ -143,14 +204,14 @@ export const trainingData: TrainingDataType[] = [
     git clone, git status, git add, git commit, git pull, git push,
     git config user name email, git branch, raise a PR
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: "Assignment 7",
         subTitle: "Create a repo and try above commands.",
       },
       {
         title: "Assignment 8",
-        subTitle: "Create a repo with name something like practice and commit all assignments as separate branch and follow the same for upcoming assignments.",
+        subTitle: "Create a repo with name something like practice and commit all referenceDetails as separate branch and follow the same for upcoming referenceDetails.",
       }
     ]
   },
@@ -163,11 +224,16 @@ export const trainingData: TrainingDataType[] = [
 
     DOM manipulation
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: " Assignment 9",
         subTitle: "Stopwatch-App -",
-        referenceUrls: ["https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Stopwatch-App.md"]
+        referenceUrls: [
+          {
+            title: "Stopwatch-App",
+            url: "https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Stopwatch-App.md"
+          }
+        ]
       }
     ]
   },
@@ -196,16 +262,26 @@ export const trainingData: TrainingDataType[] = [
     Scope, Shadow DOM, Promise, async await
 
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: "Assignment 10",
         subTitle: "TODO app assignment - ",
-        referenceUrls: ["https://github.com/AbhishekThorat/Todo_app_js"]
+        referenceUrls: [
+          {
+            title: "JS TODO app",
+            url: "https://github.com/AbhishekThorat/Todo_app_js"
+          }
+        ]
       },
       {
         title: "Assignment 11",
         subTitle: "GitHub status app -",
-        referenceUrls: ["https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/GitHub-Status-App.md"]
+        referenceUrls: [
+          {
+            title: "GitHub Status App",
+            url: "https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/GitHub-Status-App.md"
+          }
+        ]
       },
       {
         title: "Assignment 12",
@@ -239,7 +315,7 @@ export const trainingData: TrainingDataType[] = [
     Project setup
     create-react-app, next.js
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: "Assignment 13",
         subTitle: "Create basic project using create-react-app",
@@ -273,7 +349,7 @@ export const trainingData: TrainingDataType[] = [
     Responsive using CSS in JS
 
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: "Assignment 17",
         subTitle: "Let's convert Assignment - 15 to responsive.",
@@ -292,7 +368,7 @@ export const trainingData: TrainingDataType[] = [
     react-router
 
     `,
-    assignments: [
+    referenceDetails: [
       {
         title: "Assignment 18",
         subTitle: "Custom hook to track scroll position",
