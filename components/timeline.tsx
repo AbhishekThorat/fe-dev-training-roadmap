@@ -50,7 +50,7 @@ const Timeline = () => {
 
             <TimelineSeparator>
               <TimelineDot>
-                <AcUnitIcon />
+                <AcUnitIcon style={{ maxHeight: "1em", maxWidth: "1em" }} />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
