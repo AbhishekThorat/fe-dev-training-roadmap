@@ -91,7 +91,7 @@ const Card = ({ cardData }: { cardData: TrainingDataType }) => {
                     <Box display="flex" flexWrap="wrap" textAlign="inherit" justifyContent="space-evenly">
                       {
                         referenceDetail.referenceUrls?.map((referenceUrl, index) =>
-                          <Link key={referenceUrl.url} target="_blank" color="secondary" href={referenceUrl.title} style={{ margin: 4, fontSize: 16 }}>
+                          <Link key={referenceUrl.url} target="_blank" color="secondary" href={referenceUrl.url} style={{ margin: 4, fontSize: 16 }}>
                             {referenceUrl.title}
                           </Link>
                         )

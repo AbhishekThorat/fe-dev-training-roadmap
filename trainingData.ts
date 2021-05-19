@@ -62,7 +62,7 @@ export const trainingData: TrainingDataType[] = [
     level: TopicLevel.Beginner,
     title: "Basic HTML",
     subTitle: "Let's start with basic HTML",
-    description: `Doctype, HTML and HTML5, Favicon, Id and class, Semantic HTML, HTML Input types, HTML Attributes, Page Structuring`,
+    description: `Doctype, HTML and HTML5, Favicon, Id and class, Semantic HTML, HTML Attributes, Page Structuring`,
     referenceDetails: [
       {
         title: "Reading Materials -",
@@ -154,9 +154,8 @@ export const trainingData: TrainingDataType[] = [
     level: TopicLevel.Intermediate,
     title: "Bit advanced HTML topics",
     subTitle: "Let's understand untold HTML requirements",
-    description: `HTML forms
-    SEO
-    Accessibility
+    description: `HTML Input types,  HTML forms,
+    SEO, Accessibility
     `,
     referenceDetails: [
       {
