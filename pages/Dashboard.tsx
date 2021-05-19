@@ -9,16 +9,6 @@ import Timeline from '../components/timeline';
 import ScrollTop from '../components/scrollToTop';
 
 const useStyles = makeStyles((theme) => ({
-  header: {
-    position: "sticky",
-    top: 0,
-    zIndex: 2,
-    padding: "16px",
-    width: "100%",
-    textAlign: "center",
-    borderBottom: "1px solid lightgray",
-    backgroundColor: theme.palette.background.default,
-  },
   footer: {
     textAlign: "center",
     marginTop: "auto",
@@ -40,9 +30,6 @@ export default function CustomizedTimeline() {
       <Head>
         <title>FE-dev Roadmap</title>
       </Head>
-      <h1 className={classes.header}>
-        Frontend Development Training Roadmap
-      </h1>
       <div>
         <Timeline />
       </div>
