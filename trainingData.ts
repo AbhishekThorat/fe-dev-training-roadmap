@@ -33,6 +33,7 @@ export const trainingData: TrainingDataType[] = [
       title: "Reference URLs",
       subTitle: "We can use following awesome platforms (Use JS to solve problems)",
       referenceUrls: [
+        "https://www.freecodecamp.org/",
         "https://www.codility.com/",
         "https://www.dailycodingproblem.com/",
         "https://www.hackerrank.com/"
@@ -44,11 +45,16 @@ export const trainingData: TrainingDataType[] = [
     title: "Basic HTML",
     subTitle: "Let's start with basic HTML",
     description: `Basic HTML, Doctype, HTML and HTML5, Id and class, Favicon, Semantic HTML, HTML Input types, HTML Attributes`,
-    assignments: [{
-      title: "Assignment - 1",
-      subTitle: "Portfolio-site",
-      referenceUrls: ["https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage"]
-    }]
+    assignments: [
+      {
+        title: "Reading Materials -",
+        referenceUrls: ["https://www.w3schools.com/html/default.asp", "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics", "http://tudip.steersimple.com/projects/tudip-internal/wiki/HTML_Deep_Diving"]
+      },
+      {
+        title: "Assignment - 1",
+        subTitle: "Portfolio-site",
+        referenceUrls: ["https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage"]
+      }]
   },
   {
     level: TopicLevel.Intermediate,
