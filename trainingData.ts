@@ -62,7 +62,7 @@ export const trainingData: TrainingDataType[] = [
     level: TopicLevel.Beginner,
     title: "Basic HTML",
     subTitle: "Let's start with basic HTML",
-    description: `Basic HTML, Doctype, HTML and HTML5, Id and class, Favicon, Semantic HTML, HTML Input types, HTML Attributes`,
+    description: `Doctype, HTML and HTML5, Favicon, Id and class, Semantic HTML, HTML Input types, HTML Attributes, Page Structuring`,
     referenceDetails: [
       {
         title: "Reading Materials -",
@@ -88,33 +88,89 @@ export const trainingData: TrainingDataType[] = [
       }]
   },
   {
+    level: TopicLevel.Beginner,
+    title: "Basic CSS",
+    subTitle: "Let's start with basic CSS",
+    description: `Basics points -
+    Internal and External CSS, BOX model, float, positions,
+    display, Margin collapse, Different selectors, Specificity.
+    
+    Understand layouts
+    `,
+    referenceDetails: [
+      {
+        title: "Assignment 2",
+        subTitle: "Implement login page for some site -",
+        referenceUrls: [
+          {
+            title: "Pluralsight Login Page",
+            url: "https://app.pluralsight.com/id?"
+          }
+        ]
+      },
+      {
+        title: "Assignment 3",
+        subTitle: "Acme Photography - ",
+        referenceUrls: [
+          {
+            title: "ACME Photography Site",
+            url: "https://jolly-kalam-23776e.netlify.app/photographysite/#images"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    level: TopicLevel.Beginner,
+    title: "Basic GIT",
+    subTitle: "Let's learn about code versioning",
+    description: `What, Why, How
+    what is git, different softwares for version management
+
+    Practice
+    git clone, git status, git add, git commit, git pull, git push,
+    git config user name email, git branch, raise a PR
+    `,
+    referenceDetails: [
+      {
+        title: "Assignment 4",
+        subTitle: "Create a repo and try above commands.",
+      },
+      {
+        title: "Assignment 5",
+        subTitle: "Create a repo with name something like practice and commit all referenceDetails as separate branch and follow the same for upcoming referenceDetails.",
+      }
+    ]
+  },
+  {
     level: TopicLevel.Intermediate,
     title: "Bit advanced HTML topics",
     subTitle: "Let's understand HTML forms and storage APIs along with HTML events",
-    description: `HTML forms
+    description: `
     Storages and HTML Events -> Session Storage and Local Storage
     `,
-    referenceDetails: [{
-      title: "Assignment - 2",
-      subTitle: "An Online Survey Form -",
-      referenceUrls: [
-        {
-          title: "Assignment/Expected output",
-          url: "https://codepen.io/freeCodeCamp/full/VPaoNP"
-        }
-      ]
-    }]
   },
   {
     level: TopicLevel.Intermediate,
     title: "Bit advanced HTML topics",
     subTitle: "Let's understand untold HTML requirements",
-    description: `SEO
+    description: `HTML forms
+    SEO
     Accessibility
     `,
     referenceDetails: [
       {
-        title: "Assignment 3",
+        title: "Assignment - 6",
+        subTitle: "An Online Survey Form -",
+        referenceUrls: [
+          {
+            title: "Assignment/Expected output",
+            url: "https://codepen.io/freeCodeCamp/full/VPaoNP"
+          }
+        ]
+      },
+      {
+        title: "Assignment 7",
         subTitle: "Product landing page - ",
         referenceUrls: [
           {
@@ -136,49 +192,18 @@ export const trainingData: TrainingDataType[] = [
     ]
   },
   {
-    level: TopicLevel.Beginner,
-    title: "Basic CSS",
-    subTitle: "Let's start with basic CSS",
-    description: `Basics points -
-    Internal and External CSS, BOX model, float, positions,
-    display, CSS Grid, Flex Box, Margin collapse, Different selectors, Specificity.
-    
-    Understand layouts
-    `,
-    referenceDetails: [
-      {
-        title: "Assignment 4",
-        subTitle: "Implement login page for some site -",
-        referenceUrls: [
-          {
-            title: "Pluralsight Login Page",
-            url: "https://app.pluralsight.com/id?"
-          }
-        ]
-      },
-      {
-        title: "Assignment 5",
-        subTitle: "Acme Photography - ",
-        referenceUrls: [
-          {
-            title: "ACME Photography Site",
-            url: "https://jolly-kalam-23776e.netlify.app/photographysite/#images"
-          }
-        ]
-      }
-    ]
-  },
-  {
     level: TopicLevel.Intermediate,
     title: "Bit advanced styles",
     subTitle: "Let's start with basic CSS",
-    description: `Responsive Design -
+    description: `
+    CSS Grid, Flex Box
+    Responsive Design -
     Viewport, Media queries
     
     `,
     referenceDetails: [
       {
-        title: "Assignment 6",
+        title: "Assignment 8",
         subTitle: "Let's make Assignment 1 responsive.",
       },
       {
@@ -195,28 +220,6 @@ export const trainingData: TrainingDataType[] = [
   },
   {
     level: TopicLevel.Beginner,
-    title: "Basic GIT",
-    subTitle: "Let's learn about code versioning",
-    description: `What, Why, How
-    what is git, different softwares for version management
-
-    Practice
-    git clone, git status, git add, git commit, git pull, git push,
-    git config user name email, git branch, raise a PR
-    `,
-    referenceDetails: [
-      {
-        title: "Assignment 7",
-        subTitle: "Create a repo and try above commands.",
-      },
-      {
-        title: "Assignment 8",
-        subTitle: "Create a repo with name something like practice and commit all referenceDetails as separate branch and follow the same for upcoming referenceDetails.",
-      }
-    ]
-  },
-  {
-    level: TopicLevel.Beginner,
     title: "Basic JavaScript",
     subTitle: "Let's dive into JS",
     description: `Basics
@@ -226,7 +229,7 @@ export const trainingData: TrainingDataType[] = [
     `,
     referenceDetails: [
       {
-        title: " Assignment 9",
+        title: "Assignment 9",
         subTitle: "Stopwatch-App -",
         referenceUrls: [
           {
