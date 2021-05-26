@@ -40,7 +40,7 @@ export default function CustomizedTimeline() {
         </Box>
         <Box className={classes.centerAligned}>
           For contribution/issues/suggestions, please visit
-          <Link href="https://github.com/AbhishekThorat/fe-dev-training-roadmap">
+          <Link color="secondary" href="https://github.com/AbhishekThorat/fe-dev-training-roadmap">
             {" "}
             this github repo
           </Link>

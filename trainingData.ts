@@ -92,12 +92,22 @@ export const trainingData: TrainingDataType[] = [
     title: "Basic CSS",
     subTitle: "Let's start with basic CSS",
     description: `Basics points -
-    Internal and External CSS, BOX model, float, positions,
+    Internal and External CSS, BOX model, float, Flex Box, positions,
     display, Margin collapse, Different selectors, Specificity.
     
     Understand layouts
+
     `,
     referenceDetails: [
+      {
+        title: "Awesome site to exercise display:flex skills",
+        referenceUrls: [
+          {
+            title: "Flex-box Froggy",
+            url: "https://flexboxfroggy.com/"
+          }
+        ]
+      },
       {
         title: "Assignment 2",
         subTitle: "Implement login page for some site -",
@@ -143,92 +153,47 @@ export const trainingData: TrainingDataType[] = [
     ]
   },
   {
-    level: TopicLevel.Intermediate,
-    title: "Bit advanced HTML topics",
-    subTitle: "Let's understand HTML forms and storage APIs along with HTML events",
-    description: `
-    Storages and HTML Events -> Session Storage and Local Storage
-    `,
-  },
-  {
-    level: TopicLevel.Intermediate,
-    title: "Bit advanced HTML topics",
-    subTitle: "Let's understand untold HTML requirements",
-    description: `HTML Input types,  HTML forms,
-    SEO, Accessibility
-    `,
-    referenceDetails: [
-      {
-        title: "Assignment - 6",
-        subTitle: "An Online Survey Form -",
-        referenceUrls: [
-          {
-            title: "Assignment/Expected output",
-            url: "https://codepen.io/freeCodeCamp/full/VPaoNP"
-          }
-        ]
-      },
-      {
-        title: "Assignment 7",
-        subTitle: "Product landing page - ",
-        referenceUrls: [
-          {
-            title: "Product Landing Page",
-            url: "https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Product-Landing-Page.md"
-          }
-        ]
-      },
-      {
-        title: "Bonus",
-        subTitle: "HTML exercise - ",
-        referenceUrls: [
-          {
-            title: "HTML Exercise Page",
-            url: "https://www.w3schools.com/html/exercise.asp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    level: TopicLevel.Intermediate,
-    title: "Bit advanced styles",
-    subTitle: "Let's start with basic CSS",
-    description: `
-    CSS Grid, Flex Box
-    Responsive Design -
-    Viewport, Media queries
-    
-    `,
-    referenceDetails: [
-      {
-        title: "Assignment 8",
-        subTitle: "Let's make Assignment 1 responsive.",
-      },
-      {
-        title: "Bonus",
-        subTitle: "complete this CSS exercise -",
-        referenceUrls: [
-          {
-            title: "CSS Exercises",
-            url: "https://www.w3schools.com/css/exercise.asp"
-          }
-        ]
-      }
-    ]
-  },
-  {
     level: TopicLevel.Beginner,
     title: "Basic JavaScript",
     subTitle: "Let's dive into JS",
-    description: `Basics
-    String, Number methods, Iterators, Closures, RegEx
-
+    description: `Introduction to JavaScript (what it is, where it runs, node, EcmaScript)
+    Add JS to webpage,  Separation of concern,
+    Developer console,
+    Variables,
+    Data types,
+    Alerts, prompt, confirm
+    
+    operators, Logical operators,  & comparison
+    type-conversions
+    
+    Conditional branching
+    
     DOM manipulation
+
+    Iterators
+    Closures
     `,
     referenceDetails: [
       {
-        title: "Assignment 9",
+        title: "MDN JS docs - Consider this as source of truth",
+        referenceUrls: [
+          {
+            title: "MDN JS docs",
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          }
+        ]
+      },
+      {
+        title: "For simpler explanation we can consider javascript.info site",
+        referenceUrls: [
+          {
+            title: "javascript.info",
+            url: "https://javascript.info/"
+          }
+        ]
+      },
+      {
+        title: "Assignment 6",
         subTitle: "Stopwatch-App -",
         referenceUrls: [
           {
@@ -254,6 +219,90 @@ export const trainingData: TrainingDataType[] = [
     description: `What, Why, How
     NPM Yarn
     `
+  },
+  {
+    level: TopicLevel.Intermediate,
+    title: "Bit advanced HTML topics",
+    subTitle: "Let's understand HTML forms and storage APIs along with HTML events",
+    description: `
+    Storages and HTML Events -> Session Storage and Local Storage
+    `,
+  },
+  {
+    level: TopicLevel.Intermediate,
+    title: "Bit advanced HTML topics",
+    subTitle: "Let's understand untold HTML requirements",
+    description: `HTML Input types,  HTML forms,
+    SEO, Accessibility
+    `,
+    referenceDetails: [
+      {
+        title: "Assignment - 7",
+        subTitle: "An Online Survey Form -",
+        referenceUrls: [
+          {
+            title: "Assignment/Expected output",
+            url: "https://codepen.io/freeCodeCamp/full/VPaoNP"
+          }
+        ]
+      },
+      {
+        title: "Assignment 8",
+        subTitle: "Product landing page - ",
+        referenceUrls: [
+          {
+            title: "Product Landing Page",
+            url: "https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Product-Landing-Page.md"
+          }
+        ]
+      },
+      {
+        title: "Bonus",
+        subTitle: "HTML exercise - ",
+        referenceUrls: [
+          {
+            title: "HTML Exercise Page",
+            url: "https://www.w3schools.com/html/exercise.asp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    level: TopicLevel.Intermediate,
+    title: "Bit advanced styles",
+    subTitle: "Let's start with basic CSS",
+    description: `
+    CSS Grid,
+    Responsive Design -
+    Viewport, Media queries
+    
+    `,
+    referenceDetails: [
+      {
+        title: "Awesome site to exercise display:grid skills",
+        referenceUrls: [
+          {
+            title: "CSS Grid Garden",
+            url: "https://cssgridgarden.com/"
+          }
+        ]
+      },
+      {
+        title: "Assignment 9",
+        subTitle: "Let's make Assignment 1 responsive.",
+      },
+      {
+        title: "Bonus",
+        subTitle: "complete this CSS exercise -",
+        referenceUrls: [
+          {
+            title: "CSS Exercises",
+            url: "https://www.w3schools.com/css/exercise.asp"
+          }
+        ]
+      }
+    ]
   },
   {
     level: TopicLevel.Intermediate,
