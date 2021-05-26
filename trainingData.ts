@@ -148,7 +148,7 @@ export const trainingData: TrainingDataType[] = [
       },
       {
         title: "Assignment 5",
-        subTitle: "Create a repo with name something like practice and commit all referenceDetails as separate branch and follow the same for upcoming referenceDetails.",
+        subTitle: "Create a repo with name something like training/practice and commit all assignments as separate branches and follow the same for upcoming assignments.",
       }
     ]
   },
