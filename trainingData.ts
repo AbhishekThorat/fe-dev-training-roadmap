@@ -160,18 +160,20 @@ export const trainingData: TrainingDataType[] = [
     Add JS to webpage,  Separation of concern,
     Developer console,
     Variables,
-    Data types,
+    Operators, Logical operators & comparison, type-conversions
     Alerts, prompt, confirm
     
-    operators, Logical operators,  & comparison
-    type-conversions
-    
+    Data types ->
+    Primitive and Object
+    Array, Iterators
+    Function
     Conditional branching
     
     DOM manipulation
 
-    Iterators
-    Closures
+    Scope, Closures, Hoisting,
+    Promise, async await,
+    Network calls
     `,
     referenceDetails: [
       {
@@ -309,8 +311,7 @@ export const trainingData: TrainingDataType[] = [
     title: "Bit advance JS",
     subTitle: "Understand few advanced but most used JS techniques",
     description: `Mostly Used
-    hoisting, Network calls, Event bubbling, Prototype,
-    Scope, Shadow DOM, Promise, async await
+    Event bubbling, Prototype, Shadow DOM,
 
     `,
     referenceDetails: [
