@@ -110,8 +110,8 @@ const Card = ({ cardData }: { cardData: TrainingDataType }) => {
                   {`Goal${cardData.goals.length > 1 ? "s" : ''} -`}
                 </Typography>
                 {
-                  cardData.goals.map(goal => (
-                    <Typography variant="body1">
+                  cardData.goals.map((goal, index) => (
+                    <Typography key={index} variant="body1">
                       {goal}
                     </Typography>
                   ))
