@@ -75,8 +75,8 @@ const Card = ({ cardData }: { cardData: TrainingDataType }) => {
 
           {
             cardData.referenceDetails?.map((referenceDetail) => (
-              <React.Fragment key={referenceDetail.title}>
-                <Typography>
+              <Box marginY={2} key={referenceDetail.title}>
+                <Typography variant="subtitle1">
                   {referenceDetail.title}
                 </Typography>
                 {
@@ -99,8 +99,25 @@ const Card = ({ cardData }: { cardData: TrainingDataType }) => {
                     </Box>
                   )
                 }
-              </React.Fragment>
+              </Box>
             ))
+          }
+
+          {
+            cardData.goals?.length && (
+              <Box marginY={2}>
+                <Typography variant="subtitle1">
+                  {`Goal${cardData.goals.length > 1 ? "s" : ''} -`}
+                </Typography>
+                {
+                  cardData.goals.map(goal => (
+                    <Typography variant="body1">
+                      {goal}
+                    </Typography>
+                  ))
+                }
+              </Box>
+            )
           }
         </CardContent>
       </Collapse>

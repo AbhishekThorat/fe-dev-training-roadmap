@@ -25,6 +25,7 @@ export type TrainingDataType = {
   subTitle?: React.ReactNode;
   description: React.ReactNode;
   referenceDetails?: ReferenceDetail[];
+  goals: string[];
 }
 
 export const TIME_LINE_OPPOSITE_CONTENT_PREFIX = "Step";
@@ -56,7 +57,10 @@ export const trainingData: TrainingDataType[] = [
           url: "https://www.hackerrank.com/"
         }
       ]
-    }]
+    }],
+    goals: [
+      "Feel comfortable to approach/solve a problem using technologies.",
+    ],
   },
   {
     level: TopicLevel.Beginner,
@@ -85,7 +89,11 @@ export const trainingData: TrainingDataType[] = [
             url: "https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage"
           }
         ]
-      }]
+      }],
+    goals: [
+      "Feel comfortable to use different HTML tag.",
+      "Feel comfortable with page structuring using semantic tags.",
+    ],
   },
   {
     level: TopicLevel.Beginner,
@@ -128,6 +136,10 @@ export const trainingData: TrainingDataType[] = [
           }
         ]
       }
+    ],
+    goals: [
+      "Feel comfortable with adding styles for web-pages.",
+      "Feel comfortable to use all points mentioned with this card."
     ]
   },
   {
@@ -150,6 +162,12 @@ export const trainingData: TrainingDataType[] = [
         title: "Assignment 5",
         subTitle: "Create a repo with name something like training/practice and commit all assignments as separate branches and follow the same for upcoming assignments.",
       }
+    ],
+    goals: [
+      "Feel comfortable to work with git versioning tool",
+      "Feel comfortable with Github, Gitlab, bitbucket and all.",
+      "Feel comfortable to commit, pull code on repo/different branches.",
+      "Feel comfortable to create a PR/MR to submit a code for review.",
     ]
   },
   {
@@ -204,6 +222,12 @@ export const trainingData: TrainingDataType[] = [
           }
         ]
       }
+    ],
+    goals: [
+      "Feel comfortable to inject JS with HTML pages.",
+      "Feel comfortable to implement some business logic using JS. (Sync/async)",
+      "Feel comfortable to do DOM manipulation.",
+      "Feel comfortable to use all points mentioned with this card.",
     ]
   },
   {
@@ -212,7 +236,10 @@ export const trainingData: TrainingDataType[] = [
     subTitle: "Let's learn about JSON",
     description: ` What, Why, How
     Discuss the handling of JSON with JS, mostly mapping, stringify and Parse.
-    `
+    `,
+    goals: [
+      "Feel comfortable to consume JSON with your JS code.",
+    ]
   },
   {
     level: TopicLevel.Beginner,
@@ -220,22 +247,19 @@ export const trainingData: TrainingDataType[] = [
     subTitle: "Let's learn about package managers with node ecosystem.",
     description: `What, Why, How
     NPM Yarn
-    `
-  },
-  {
-    level: TopicLevel.Intermediate,
-    title: "Bit advanced HTML topics",
-    subTitle: "Let's understand HTML forms and storage APIs along with HTML events",
-    description: `
-    Storages and HTML Events -> Session Storage and Local Storage
     `,
+    goals: [
+      "Feel comfortable to consume different node dependencies.",
+    ]
   },
   {
     level: TopicLevel.Intermediate,
     title: "Bit advanced HTML topics",
-    subTitle: "Let's understand untold HTML requirements",
-    description: `HTML Input types,  HTML forms,
+    subTitle: "Let's understand HTML forms and storage APIs and few untold requirement",
+    description: `HTML forms, HTML Input types,
+    Storages and HTML Events -> Session Storage and Local Storage
     SEO, Accessibility
+
     `,
     referenceDetails: [
       {
@@ -268,6 +292,10 @@ export const trainingData: TrainingDataType[] = [
           }
         ]
       }
+    ],
+    goals: [
+      "Feel comfortable to consume browser storage.",
+      "Feel comfortable with topics like SEO and Accessibility",
     ]
   },
   {
@@ -304,6 +332,9 @@ export const trainingData: TrainingDataType[] = [
           }
         ]
       }
+    ],
+    goals: [
+      "Feel comfortable with responsive UI and CSS Grid.",
     ]
   },
   {
@@ -339,13 +370,19 @@ export const trainingData: TrainingDataType[] = [
         title: "Assignment 12",
         subTitle: "Add a support of Assignment 10 assignment with Assignment 11. Add a simple button to navigate to Assignment 10 and button on to do app to navigate back.",
       }
+    ],
+    goals: [
+      "Feel comfortable with how JS works and DOM in general.",
     ]
   },
   {
     level: TopicLevel.Beginner,
     title: "SPA",
     subTitle: "Let's see what does SPA means with one of these frameworks React, Vue, Angular",
-    description: "Apart from SPA, from here we can explore any other frontend techniques like WordPress and all"
+    description: "Apart from SPA, from here we can explore any other frontend techniques like WordPress and all",
+    goals: [
+      "Feel comfortable to select SPA or multi page application w.r.t. requirements.",
+    ]
   },
   {
     level: TopicLevel.Beginner,
@@ -355,7 +392,11 @@ export const trainingData: TrainingDataType[] = [
     webpack, babel, npm scripts, linter and formatter
 
     Also explore code editors and its configuration.
-    `
+    `,
+    goals: [
+      "Feel comfortable to use different tools to compile and serve frontend code on browser.",
+      "Feel comfortable to learn any DOM manipulation frameworks/modules like Vue, Angular, ReactJS",
+    ]
   },
   {
     level: TopicLevel.Beginner,
@@ -384,6 +425,13 @@ export const trainingData: TrainingDataType[] = [
         title: "Assignment 16",
         subTitle: "Lets complete assignment 12 with ReactJS and identify difference.",
       }
+    ],
+    goals: [
+      "Feel comfortable to create react app from scratch.",
+      "Feel comfortable with react lifecycle methods.",
+      "Feel comfortable with react components.",
+      "Feel comfortable to divide mocks into the small small react components.",
+      "Feel comfortable to use all points mentioned with this card.",
     ]
   },
   {
@@ -406,6 +454,10 @@ export const trainingData: TrainingDataType[] = [
         title: "Assignment 17",
         subTitle: "Let's convert Assignment - 15 to responsive.",
       },
+    ],
+    goals: [
+      "Feel comfortable to style your react app with advance styling practices like SCSS, CSS in JS.",
+      "Feel comfortable with mobile first UI.",
     ]
   },
   {
@@ -439,19 +491,28 @@ export const trainingData: TrainingDataType[] = [
         4. On successful login navigate use to basic dashboard and on errors show appropriate errors.
         `,
       },
+    ],
+    goals: [
+      "Feel comfortable with react hooks, state management tools like Redux, and routing with react apps.",
     ]
   },
   {
     level: TopicLevel.Intermediate,
     title: "Typescript/flow",
     subTitle: "Let's explore a way to make JS type protective.",
-    description: "",
+    description: "Will add more details soon....",
+    goals: [
+      "Feel comfortable to write TS code.",
+    ]
   },
   {
     level: TopicLevel.Intermediate,
     title: "Unit test cases",
     subTitle: "Let's explore a way to add unit test for code.",
     description: "Will add more details soon....",
+    goals: [
+      "Feel comfortable to write unit-tests for your code.",
+    ]
   },
   {
     level: TopicLevel.Intermediate,
@@ -462,11 +523,17 @@ export const trainingData: TrainingDataType[] = [
     What does pixel perfect means?
     Zeplin, figma, invision
     `,
+    goals: [
+      "Feel comfortable to understand and deliver what exactly client needs.",
+    ]
   },
   {
     level: TopicLevel.Intermediate,
     title: "Debugging",
     subTitle: "Let's improve debugging skills!",
-    description: "",
+    description: "Will add more details soon....",
+    goals: [
+      "Feel comfortable with dev-tool like a PRO"
+    ]
   },
 ];
